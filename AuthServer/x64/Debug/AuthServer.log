@@ -1,0 +1,11 @@
+﻿  auth_server_main.cpp
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(75,9): warning C4101: 'timestamp': unreferenced local variable
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(309,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(317,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(349,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(357,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(133,1): warning C4715: 'verifyUser': not all control paths return a value
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(96,1): warning C4715: 'registerUser': not all control paths return a value
+     Creating library C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Debug\AuthServer.lib and object C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Debug\AuthServer.exp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  AuthServer.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Debug\AuthServer.exe

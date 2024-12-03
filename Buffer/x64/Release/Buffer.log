@@ -1,0 +1,9 @@
+﻿  buffer.cpp
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(34,33): warning C4244: '=': conversion from 'uint16_t' to '_Ty', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(34,33): warning C4244:         with
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(34,33): warning C4244:         [
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(34,33): warning C4244:             _Ty=uint8_t
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(34,33): warning C4244:         ]
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(50,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\Buffer\buffer.cpp(60,20): warning C4018: '<': signed/unsigned mismatch
+  Buffer.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\Buffer.lib
