@@ -1,13 +1,7 @@
-﻿  chat_client_main.cpp
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\ChatClient\chat_client_main.cpp(236,67): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\ChatClient\chat_client_main.cpp(296,59): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\ChatClient\chat_client_main.cpp(384,56): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\ChatClient\chat_client_main.cpp(412,49): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\ChatClient\chat_client_main.cpp(430,58): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-     Creating library C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\ChatClient.lib and object C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\ChatClient.exp
+﻿     Creating library C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\ChatClient.lib and object C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\ChatClient.exp
   Generating code
-  2 of 714 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  3 of 714 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  ChatClient.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\ChatClient.exe
+  ChatClient.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\ChatClient.exe

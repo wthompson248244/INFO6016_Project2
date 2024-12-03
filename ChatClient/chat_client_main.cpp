@@ -40,7 +40,7 @@ void receiveMessage(SOCKET socket)
 				uint32_t messageLength = buffer.ReadUInt32LE();
 				std::string msg = buffer.ReadString(messageLength);
 
-				//std::cout << msg << "\n";
+				std::cout << msg << "\n";
 			}
 		}
 		else if (result == 0)
@@ -360,24 +360,6 @@ int main(int arg, char** argv)
 		}
 	}
 
-	//while (enterString.find("REGISTER") == std::string::npos && enterString.find("AUTHENTICATE") == std::string::npos)
-	//{
-	//
-		//if (enterString.find("REGISTER") != std::string::npos)
-		//{
-	//
-		//}
-		//else if (enterString.find("AUTHENTICATE") != std::string::npos)
-		//{
-	//
-		//}
-		//else
-		//{
-		//	std::cout << "Incorrect input format, try again." << std::endl;
-		//	std::getline(std::cin, enterString);
-		//}
-	//}
-
 	//Join Message
 	ChatMessage joinMessage;
 	joinMessage.message = "[" + enterUsername + "] has joined the chatroom.";
@@ -410,7 +392,7 @@ int main(int arg, char** argv)
 		ChatMessage message;
 		message.message = "[" + enterUsername + "]: " + input;
 		message.messageLength = message.message.length();
-		message.header.messageType = CHAT;
+		message.header.messageType = 2;
 		message.header.packetSize = message.messageLength + sizeof(message.messageLength) + sizeof(message.header.messageType) + sizeof(message.header.packetSize);
 
 		const int bufSize = 512;
@@ -428,7 +410,7 @@ int main(int arg, char** argv)
 			ChatMessage exitMessage;
 			exitMessage.message = "[" + enterUsername + "] has left the chatroom.";
 			exitMessage.messageLength = exitMessage.message.length();
-			exitMessage.header.messageType = CHAT;
+			exitMessage.header.messageType = 2;
 			exitMessage.header.packetSize = exitMessage.messageLength + sizeof(exitMessage.messageLength) + sizeof(exitMessage.header.messageType) + sizeof(exitMessage.header.packetSize);
 
 			const int bufSize = 512;

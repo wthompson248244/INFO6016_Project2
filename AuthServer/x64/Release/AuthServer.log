@@ -1,14 +1,8 @@
-﻿  auth_server_main.cpp
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(75,9): warning C4101: 'timestamp': unreferenced local variable
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(320,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(328,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(336,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(368,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\AuthServer\auth_server_main.cpp(376,65): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
-     Creating library C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\AuthServer.lib and object C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\AuthServer.exp
+﻿     Creating library C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\AuthServer.lib and object C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\AuthServer.exp
   Generating code
-  0 of 670 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\AuthServer\auth_server_main.cpp(142): warning C4715: 'verifyUser': not all control paths return a value
+C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\AuthServer\auth_server_main.cpp(96): warning C4715: 'registerUser': not all control paths return a value
+  All 670 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  AuthServer.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2\x64\Release\AuthServer.exe
+  AuthServer.vcxproj -> C:\Users\grnwt\Downloads\Fanshawe\F24\INFO6016 Network Programming\PROJECTS\Project 2 git\Project 2\x64\Release\AuthServer.exe

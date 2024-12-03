@@ -166,9 +166,7 @@ int main(int arg, char** argv)
 
 					std::cout << msg << std::endl;
 
-					//if (msg == "success")
-					//{
-						// Only send to other clients?
+					// Only send to other clients?
 					for (int j = 0; j < activeConnections.size(); j++)
 					{
 						SOCKET outSocket = activeConnections[j];
@@ -178,31 +176,7 @@ int main(int arg, char** argv)
 							send(outSocket, (const char*)(&buffer.m_BufferData[0]), packetSize, 0);
 						}
 					}
-					//}
-					/*else if (msg == "fail")
-					{
-
-					}*/
 				}
-
-				//else if (messageType == REGI)
-				//{
-				//	// handle the message
-				//	uint32_t messageLength = buffer.ReadUInt32LE();
-				//	std::string msg = buffer.ReadString(messageLength);
-
-				//	std::cout << msg << std::endl;
-
-				//	if (msg == "success")
-				//	{
-				//		
-				//	}
-				//	else if (msg == "fail")
-				//	{
-				//		
-				//	}
-				//}
-
 			}
 		}
 
@@ -264,19 +238,19 @@ int main(int arg, char** argv)
 				uint32_t messageLength = buffer.ReadUInt32LE();
 				std::string msg = buffer.ReadString(messageLength);
 
-				// Only send to other clients?
-				for (int j = 0; j < activeConnections.size(); j++)
+				if (messageType == AUTH || messageType == REGI)
 				{
-					SOCKET outSocket = activeConnections[j];
+					User user = user.deserializeUserFromBinary(msg);
+					printf("PacketSize:%d\nMessageType:%d\nMessageLength:%d\nMessage:%s\n\n", packetSize, messageType, messageLength, user.username.c_str());
+					send(serverSocket, (const char*)(&buffer.m_BufferData[0]), packetSize, 0);
+				}
+				else
+				{
+					// Only send to other clients?
+					for (int j = 0; j < activeConnections.size(); j++)
+					{
+						SOCKET outSocket = activeConnections[j];
 
-					if (messageType == AUTH || messageType == REGI)
-					{
-						User user = user.deserializeUserFromBinary(msg);
-						printf("PacketSize:%d\nMessageType:%d\nMessageLength:%d\nMessage:%s\n\n", packetSize, messageType, messageLength, user.username.c_str());
-						send(serverSocket, (const char*)(&buffer.m_BufferData[0]), packetSize, 0);
-					}
-					else
-					{
 						if (outSocket != listenSocket && outSocket != socket)
 						{
 							printf("PacketSize:%d\nMessageType:%d\nMessageLength:%d\nMessage:%s\n\n", packetSize, messageType, messageLength, msg.c_str());
@@ -284,6 +258,7 @@ int main(int arg, char** argv)
 						}
 					}
 				}
+
 
 				FD_CLR(socket, &socketsReadyForReading);
 				count--;
